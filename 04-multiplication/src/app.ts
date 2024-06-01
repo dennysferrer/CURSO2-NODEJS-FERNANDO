@@ -1,16 +1,7 @@
-import { yarg } from "./config/plugins/yargs.plugin";
-import { ServerApp } from "./presentation/server-app";
+
+import { findHeroById } from '../src/services/hero.services'
 
 
+const hero = findHeroById(4);
 
-
-(async() => {
-    await main();
-})();
-
-
-async function main() {
-    const { b: base, l: limit, s: showTable, n: name, d: destination } = yarg;
-    ServerApp.run({base, limit, showTable, name, destination});
-
-}
+console.log(hero?.name ?? 'Hero not found...')

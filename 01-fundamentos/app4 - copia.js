@@ -4,17 +4,17 @@ console.log('Inicio de programa');
 
 setTimeout( () => {
     console.log('Primer Timeout');
-}, 3000 );
+    }, 3000 );
 
 
 setTimeout( () => {
     console.log('Segundo Timeout');
-}, 0 );
+    }, 0 );
 
 
 setTimeout( () => {
     console.log('Tercer Timeout');
-}, 0 );
+    }, 0 );
 
 
 console.log('Fin de programa');

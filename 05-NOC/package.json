@@ -1,10 +1,10 @@
 {
-  "name": "04-multiplication",
+  "name": "05-noc",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsnd --respawn --clear src/app.ts",
     "build": "rimraf ./dist && tsc",
     "start": "npm run build && node dist/app.js"
   },
@@ -13,10 +13,12 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@types/node": "^20.12.5",
-    "nodemon": "^3.1.0",
-    "rimraf": "^5.0.5",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.4.4"
+    "@types/node": "^20.13.0",
+    "rimraf": "^5.0.7",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "cron": "^3.1.7"
   }
 }
